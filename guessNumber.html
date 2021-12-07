@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NumberGuessing</title>
+</head>
+<body>
+	<script>
+		var rand = Math.floor((Math.random()*10)+1);
+		var guess_number = window.prompt("Please guess one number between 1~10");
+		while(parseInt(guess_number) !=rand){
+			alert('Guess again');
+			guess_number = window.prompt("Please guess one number between 1~10");
+		}
+	</script>
+	<center>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<input type="button" value="Prize" style="width: 200px; height: 50px;"onclick="document.body.style.backgroundColor = 'hotpink'">
+		<input type="button" value="Reset" style="width: 200px; height: 50px;"onclick="document.body.style.backgroundColor = 'white'">
+	</center>
+</body>
+</html>
